@@ -92,7 +92,7 @@ public class ProductsController {
     return "products/EditProduct";
   }
 
-  @PostMapping({"/edit", "/edit/"})
+  @PostMapping({"/update", "/update/"})
   public String updateProduct(
     @Valid @ModelAttribute("productDto") ProductDTO productDto,
     @RequestParam int id ,
@@ -103,7 +103,7 @@ public class ProductsController {
     try {
       Product product = repo.findById(id).get();
       model.addAttribute("product", product);
-
+      
       if (result.hasErrors()) {
         return "/products/EditProduct";
       }
