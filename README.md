@@ -38,6 +38,7 @@ This project is a simple web-based application that demonstrates the CRUD operat
 
 ## Prerequisites
 
+- IDE ( VScode , Intellij , Eclipse , etc .. )
 - Java 11 or higher
 - Maven
 - MySQL Server
@@ -60,7 +61,7 @@ This project is a simple web-based application that demonstrates the CRUD operat
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.datasource.url=jdbc:mysql://localhost:3306/beststore
     spring.datasource.username=root
-    spring.datasource.password=
+    spring.datasource.password=yourPassword
     spring.jpa.show-sql=true
     spring.jpa.hibernate.ddl-auto=update
     ```
