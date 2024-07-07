@@ -140,4 +140,15 @@ public class ProductsController {
     return "redirect:/products";
   }
 
+  @GetMapping({"/view", "/view/"})
+  public String viewProduct(@RequestParam int id, Model model) {
+    try {
+      Product product = repo.findById(id).get();
+      model.addAttribute("product", product);
+    } catch (Exception e) {
+      System.out.println("Exception: " + e.getMessage());
+    }
+    return "products/ViewProduct";
+  }
+
 }
