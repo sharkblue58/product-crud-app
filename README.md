@@ -56,12 +56,13 @@ This project is a simple web-based application that demonstrates the CRUD operat
     Create a database named `crud_db` in your MySQL server and update the `application.properties` file with your database credentials.
 
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/crud_db
-    spring.datasource.username=root
-    spring.datasource.password=yourpassword
-    spring.jpa.hibernate.ddl-auto=update
-    spring.jpa.show-sql=true
-    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+server.error.whitelabel.enabled=false
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/crud_db
+spring.datasource.username=root
+spring.datasource.password=your password
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
     ```
 
 3. **Build the project:**
@@ -75,4 +76,4 @@ This project is a simple web-based application that demonstrates the CRUD operat
 Run the application using the following command:
 
 ```bash
-mvn spring-boot:run
+ mvn spring-boot:run
