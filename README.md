@@ -1,5 +1,6 @@
 # CRUD Spring Boot Application
 ![MYSQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![BOOTSTRAP](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 This is a CRUD (Create, Read, Update, Delete) web application built using Spring Boot, MySQL, Thymeleaf, and MVC architecture. The application allows users to manage a list of entities through a web interface.
 
